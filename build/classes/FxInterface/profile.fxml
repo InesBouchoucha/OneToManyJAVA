@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="525.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ProfileController">
+   <children>
+      <AnchorPane fx:id="menu" prefHeight="525.0" prefWidth="200.0" style="-fx-background-color: #1D2026;">
+         <children>
+            <Pane prefHeight="98.0" prefWidth="200.0" style="-fx-background-color: #1D2026;">
+               <children>
+                  <Label layoutX="55.0" layoutY="14.0" text="Profile" textFill="WHITE">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="add" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="184.0" onAction="#switchAddRegime" prefHeight="47.0" prefWidth="200.0" stylesheets="@../Ressources/style.css" text="Ajouter" textFill="#fcfcfc">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="PENCIL" size="15" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" top="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-dark-grey" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="update" alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="231.0" onAction="#switchUpdateRegime" prefHeight="47.0" prefWidth="200.0" stylesheets="@../Ressources/style.css" text="Modifier" textFill="#fcfcfc">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="LAPTOP_CHROMEBOOK" size="15" text="" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" top="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-dark-grey" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="278.0" prefHeight="47.0" prefWidth="200.0" stylesheets="@../Ressources/style.css" text="Modifier" textFill="#fcfcfc">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="LAPTOP_CHROMEBOOK" size="15" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" top="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-dark-grey" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" layoutY="325.0" prefHeight="47.0" prefWidth="200.0" stylesheets="@../Ressources/style.css" text="Modifier" textFill="#fcfcfc">
+               <graphic>
+                  <MaterialDesignIconView fill="WHITE" glyphName="LAPTOP_CHROMEBOOK" size="15" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="50.0" top="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-dark-grey" />
+               </styleClass>
+            </JFXButton>
+            <Circle fx:id="circle" fill="#bf0d0d" layoutX="100.0" layoutY="108.0" radius="40.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="content" layoutX="200.0" prefHeight="525.0" prefWidth="493.0" />
+   </children>
+</AnchorPane>

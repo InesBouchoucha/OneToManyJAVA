@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxInterface.TesttestController">
+    <stylesheets>
+        <URL value="@/Ressources/style.css" />
+    </stylesheets>
+   <children>
+      <ScrollPane fx:id="scroll" layoutX="206.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane fx:id="anchor" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
