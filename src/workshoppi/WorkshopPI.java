@@ -26,7 +26,7 @@ public class WorkshopPI extends Application {
         public void start(Stage primaryStage) throws Exception {
    
 
-       Parent root = FXMLLoader.load(getClass().getResource("/FxInterface/CalculIMC.fxml"));
+       Parent root = FXMLLoader.load(getClass().getResource("/FxInterface/CalculPI.fxml"));
         
        Scene scene = new Scene(root);
         primaryStage.setTitle("add regime");
