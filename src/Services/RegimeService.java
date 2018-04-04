@@ -31,7 +31,7 @@ public class RegimeService {
       try {
           state=con.createStatement();
       } catch (SQLException ex) {
-          Logger.getLogger(FleurServices.class.getName()).log(Level.SEVERE, null, ex);
+          Logger.getLogger(RegimeService.class.getName()).log(Level.SEVERE, null, ex);
       }
       
   }

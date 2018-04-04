@@ -13,12 +13,12 @@
       <JFXComboBox fx:id="sexe" focusColor="#6bc513" layoutX="218.0" layoutY="262.0" prefHeight="34.0" prefWidth="169.0" promptText="Choisir votre sexe" />
       <JFXTextField fx:id="taille" focusColor="#6bc513" layoutX="219.0" layoutY="212.0" prefHeight="34.0" prefWidth="162.0" promptText="Taille (cm)" />
       <JFXButton fx:id="pibtn" layoutX="243.0" layoutY="320.0" onAction="#CalculPI" prefHeight="34.0" prefWidth="114.0" style="-fx-background-color: #6bc513; -fx-background-radius: 30;" text="Calculer" />
-      <Label fx:id="pi" layoutX="286.0" layoutY="116.0" text="0" textFill="#6bc513">
+      <Label fx:id="pi" layoutX="251.0" layoutY="116.0" text="0" textFill="#6bc513">
          <font>
             <Font size="52.0" />
          </font>
       </Label>
-      <Label layoutX="334.0" layoutY="137.0" text="KG" textFill="#6bc513">
+      <Label layoutX="361.0" layoutY="137.0" text="KG" textFill="#6bc513">
          <font>
             <Font size="24.0" />
          </font>

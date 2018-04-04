@@ -93,15 +93,17 @@ public class CalculPIController implements Initializable {
     @FXML
     private void CalculPI(ActionEvent event) {
        
-        double pi =0 ;
+        double p =0 ;
         double t =  Double.parseDouble(taille.getText());
         if (sexe.getValue()=="Homme")
         {
-            pi = t -100-((t-150)/4);
+            p = t -100-((t-150)/4);
+            pi.setText(String.valueOf(p));
         }
         else if (sexe.getValue()=="Femme")
         {
-            pi = t -100-((t-150)/2.5);
+            p = t -100-((t-150)/2.5);
+            pi.setText(String.valueOf(p));
         }
         
     }
