@@ -6,12 +6,15 @@
 package Controller;
 
 import com.jfoenix.controls.JFXButton;
+import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.animation.FadeTransition;
+import javafx.application.Application;
+import static javafx.application.Platform.exit;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -40,6 +43,8 @@ public class ProfileController implements Initializable {
     private AnchorPane content;
     @FXML
     private AnchorPane menu;
+    @FXML
+    private JFXButton add1;
 
 
     /**
@@ -47,8 +52,8 @@ public class ProfileController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-                //Image im = new Image("https://juicylinksmag.files.wordpress.com/2016/02/juliet-ibrahim.jpg");
-                //circle.setFill(new ImagePattern(im));
+                Image im = new Image("https://juicylinksmag.files.wordpress.com/2016/02/juliet-ibrahim.jpg");
+                circle.setFill(new ImagePattern(im));
                
  try {
       
@@ -83,7 +88,7 @@ public class ProfileController implements Initializable {
          Logger.getLogger(ProfileController.class.getName()).log(Level.SEVERE, null, ex);
      }   
     }
-     @FXML
+    @FXML
     public void switchUpdateRegime(ActionEvent event)
     {
     try {
@@ -94,6 +99,7 @@ public class ProfileController implements Initializable {
     }
 
     @FXML
-    private void dudu(ActionEvent event) {
+    private void Exit(ActionEvent event) {
+        exit();
     }
 }

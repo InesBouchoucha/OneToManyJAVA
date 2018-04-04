@@ -13,9 +13,13 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.geometry.Insets;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.HBox;
 import jfxtras.scene.layout.VBox;
 
 /**
@@ -26,9 +30,7 @@ import jfxtras.scene.layout.VBox;
 public class TesttestController implements Initializable {
 
     @FXML
-    private ScrollPane scroll;
-    @FXML
-    private AnchorPane anchor;
+    private VBox anchor;
 
 
 
@@ -40,8 +42,21 @@ public class TesttestController implements Initializable {
         
         for (int i=0; i <10; i++)
         {
-           Button btn = new Button();
-           btn.setText("dududu");
+    Button buttonSave = new Button("Save");
+    ImageView img = new ImageView("https://juicylinksmag.files.wordpress.com/2016/02/juliet-ibrahim.jpg");
+    Label l = new Label("zaeazezaezaeza");
+    AnchorPane hb = new AnchorPane();
+    hb.setPadding(new Insets(10, 10, 10, 10));
+    //hb.setSpacing(10);
+    img.setFitHeight(101);
+    img.setFitWidth(111);
+    hb.getChildren().add(img);
+    hb.getChildren().add(buttonSave);
+    hb.getChildren().add(l);
+    l.setLayoutY(99);
+    buttonSave.setLayoutY(130);
+   
+    anchor.getChildren().add(hb);
            
         }
     }    

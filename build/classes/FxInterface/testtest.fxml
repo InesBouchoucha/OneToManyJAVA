@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import jfxtras.scene.layout.VBox?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxInterface.TesttestController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background-image" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FxInterface.TesttestController">
     <stylesheets>
         <URL value="@/Ressources/style.css" />
     </stylesheets>
    <children>
-      <ScrollPane fx:id="scroll" layoutX="206.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0">
-        <content>
-          <AnchorPane fx:id="anchor" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-        </content>
+      <ScrollPane layoutX="131.0" layoutY="32.0" prefHeight="86.0" prefWidth="156.0">
+         <content>
+            <VBox fx:id="anchor" prefHeight="112.0" prefWidth="174.0" />
+         </content>
       </ScrollPane>
+      <AnchorPane layoutX="363.0" layoutY="118.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button layoutX="81.0" layoutY="161.0" mnemonicParsing="false" text="Button" />
+            <ImageView fitHeight="108.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="93.0" layoutY="123.0" text="Label" />
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

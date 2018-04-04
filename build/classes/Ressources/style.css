@@ -7,10 +7,10 @@
 }
 .hover-hand:hover {
     -fx-cursor : hand ;
+    -fx-border-color: #71cee5 ;
+    -fx-text-fill : #71cee5 ;
+    -fx-border-width : 0 0 0 5px; 
 }
 .hover-dark-grey:hover {
-    -fx-background-color : #d2d2d2 ;
-}
-.background-image:active{
-    -fx-background-image : url("C:\Users\jaoua\Desktop\PI DEV\background.png")
+    -fx-background-color : #42494b ;
 }
